@@ -70,7 +70,6 @@ public class home extends javax.swing.JFrame {
         jp9 = new javax.swing.JLabel();
         panel_content = new javax.swing.JPanel();
         homevar = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         createn = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         notas = new javax.swing.JPanel();
@@ -373,24 +372,15 @@ public class home extends javax.swing.JFrame {
 
         homevar.setPreferredSize(new java.awt.Dimension(813, 850));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel3.setText("cok de PLASTICO .NET");
-
         javax.swing.GroupLayout homevarLayout = new javax.swing.GroupLayout(homevar);
         homevar.setLayout(homevarLayout);
         homevarLayout.setHorizontalGroup(
             homevarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homevarLayout.createSequentialGroup()
-                .addContainerGap(211, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(190, 190, 190))
+            .addGap(0, 813, Short.MAX_VALUE)
         );
         homevarLayout.setVerticalGroup(
             homevarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(homevarLayout.createSequentialGroup()
-                .addGap(269, 269, 269)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(500, Short.MAX_VALUE))
+            .addGap(0, 850, Short.MAX_VALUE)
         );
 
         panel_content.add(homevar, "card2");
@@ -601,7 +591,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

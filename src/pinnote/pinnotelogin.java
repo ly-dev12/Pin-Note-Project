@@ -350,6 +350,7 @@ public class pinnotelogin extends javax.swing.JFrame {
                 obj.put("username", queryStatement.getString("username"));
                 obj.put("password", queryStatement.getString("password"));
                 obj.put("taks", queryStatement.getInt("tasks"));
+                obj.put("id", queryStatement.getInt("id_user"));
                 System.out.print(obj);
                 
                 dispose();

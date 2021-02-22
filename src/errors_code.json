@@ -1,0 +1,5 @@
+{
+    "0x011": "Error de registro, El usaurio con este nombre ya esta registrado",
+    "0x0b12": "Error el nombre de usuario es muy corto",
+    "0xb340": "Error la contraseña es incorrecta" 
+}

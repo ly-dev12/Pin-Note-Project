@@ -418,6 +418,7 @@ public class pinnotereg extends javax.swing.JFrame {
                 obj.put("username", rs.getString("username"));
                 obj.put("password", rs.getString("password"));
                 obj.put("taks", rs.getInt("tasks"));
+                obj.put("id", rs.getInt("id_user"));
                 System.out.print(obj);
                 
                 dispose();

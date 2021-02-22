@@ -92,7 +92,6 @@ public class pinnotereg extends javax.swing.JFrame {
 
         username.setBackground(new java.awt.Color(97, 212, 195));
         username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        username.setText("root");
         username.setBorder(null);
         username.setCaretColor(new java.awt.Color(255, 255, 255));
         username.setDisabledTextColor(new java.awt.Color(204, 204, 204));
@@ -101,10 +100,14 @@ public class pinnotereg extends javax.swing.JFrame {
         username_separator.setForeground(new java.awt.Color(255, 255, 255));
 
         password.setBackground(new java.awt.Color(97, 212, 195));
-        password.setText("randompass");
         password.setBorder(null);
         password.setCaretColor(new java.awt.Color(255, 255, 255));
         password.setSelectionColor(new java.awt.Color(153, 153, 153));
+        password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordActionPerformed(evt);
+            }
+        });
 
         pass_separator.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -132,10 +135,14 @@ public class pinnotereg extends javax.swing.JFrame {
         jLabel3.setText("Confirmar contraseña:");
 
         cpass.setBackground(new java.awt.Color(97, 212, 195));
-        cpass.setText("randompass");
         cpass.setBorder(null);
         cpass.setCaretColor(new java.awt.Color(255, 255, 255));
         cpass.setSelectionColor(new java.awt.Color(153, 153, 153));
+        cpass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cpassActionPerformed(evt);
+            }
+        });
 
         pass_separator2.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -379,7 +386,7 @@ public class pinnotereg extends javax.swing.JFrame {
                 pass_separator.setBackground(red);
                 pass_separator2.setForeground(red);
                 pass_separator2.setBackground(red);
-                
+                JOptionPane.showMessageDialog(null, "Las contraseñas no son iguales.");
                 return;
             }else {
                 password.setBorder(null);
@@ -396,6 +403,7 @@ public class pinnotereg extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(pinnotereg.class.getName()).log(Level.SEVERE, null, ex);
             System.out.print("Probablemnte este error se debe a que el usuario ya existe\n");
+            JOptionPane.showMessageDialog(null, "Probablemnte este error se debe a que el usuario ya existe\n");
         }
     }//GEN-LAST:event_jButton2ActionPerformed
     
@@ -413,7 +421,7 @@ public class pinnotereg extends javax.swing.JFrame {
                 System.out.print(obj);
                 
                 dispose();
-                home Home = new home(obj);
+                home Home = new home(obj, regsql);
                 Home.setVisible(true);
             }
             
@@ -429,6 +437,14 @@ public class pinnotereg extends javax.swing.JFrame {
         new pinnotelogin(regsql).setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
+        password.transferFocus();
+    }//GEN-LAST:event_passwordActionPerformed
+
+    private void cpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpassActionPerformed
+        cpass.transferFocus();
+    }//GEN-LAST:event_cpassActionPerformed
 
     /**
      * @param args the command line arguments

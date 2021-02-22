@@ -162,19 +162,32 @@ public class pinnotelogin extends javax.swing.JFrame {
 
         password.setBackground(new java.awt.Color(36, 47, 65));
         password.setForeground(new java.awt.Color(255, 255, 255));
-        password.setText("jPasswordField1");
         password.setBorder(null);
         password.setCaretColor(new java.awt.Color(255, 255, 255));
         password.setSelectionColor(new java.awt.Color(153, 153, 153));
+        password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordActionPerformed(evt);
+            }
+        });
 
         username.setBackground(new java.awt.Color(36, 47, 65));
         username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         username.setForeground(new java.awt.Color(255, 255, 255));
-        username.setText("root");
         username.setBorder(null);
         username.setCaretColor(new java.awt.Color(255, 255, 255));
         username.setDisabledTextColor(new java.awt.Color(204, 204, 204));
         username.setSelectionColor(new java.awt.Color(153, 153, 153));
+        username.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                usernameFocusLost(evt);
+            }
+        });
+        username.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usernameActionPerformed(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(97, 212, 195));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -340,10 +353,10 @@ public class pinnotelogin extends javax.swing.JFrame {
                 System.out.print(obj);
                 
                 dispose();
-                home Home = new home(obj);
+                home Home = new home(obj, regex);
                 Home.setVisible(true);
             }else {
-                JOptionPane.showMessageDialog(null, "This user dont exist");
+                JOptionPane.showMessageDialog(null, "Este usuario no existe");
                 return;
             }
         } catch (SQLException ex) {
@@ -357,6 +370,19 @@ public class pinnotelogin extends javax.swing.JFrame {
         new pinnotereg(regex).setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_usernameActionPerformed
+
+    private void usernameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_usernameFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usernameFocusLost
+
+    private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordActionPerformed
 
     /**
      * @param args the command line arguments

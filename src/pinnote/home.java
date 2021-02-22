@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package pinnote;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;

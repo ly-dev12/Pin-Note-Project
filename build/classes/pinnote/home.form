@@ -915,7 +915,11 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="24" style="1"/>
                         </Property>
+<<<<<<< HEAD
+                        <Property name="text" type="java.lang.String" value="creeate panel"/>
+=======
                         <Property name="text" type="java.lang.String" value="Fecha de entrega:"/>
+>>>>>>> cce9f8f93d899e27d5dd08f3aed669a408ff1938
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1312,7 +1316,11 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tw Cen MT Condensed Extra Bold" size="48" style="1"/>
                         </Property>
+<<<<<<< HEAD
+                        <Property name="text" type="java.lang.String" value="Notas panel"/>
+=======
                         <Property name="text" type="java.lang.String" value="NOTAS"/>
+>>>>>>> cce9f8f93d899e27d5dd08f3aed669a408ff1938
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1377,6 +1385,10 @@
                         <Property name="sundayForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="ff" type="rgb"/>
                         </Property>
+<<<<<<< HEAD
+                        <Property name="text" type="java.lang.String" value="Calendario Panel"/>
+=======
+>>>>>>> cce9f8f93d899e27d5dd08f3aed669a408ff1938
                       </Properties>
                     </Component>
                   </SubComponents>

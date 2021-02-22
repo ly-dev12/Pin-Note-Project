@@ -542,7 +542,12 @@ public class home extends javax.swing.JFrame {
             .addGap(0, 40, Short.MAX_VALUE)
         );
 
+<<<<<<< HEAD
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel7.setText("creeate panel");
+=======
         homevar.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 150, 40));
+>>>>>>> cce9f8f93d899e27d5dd08f3aed669a408ff1938
 
         jPanel18.setBackground(new java.awt.Color(255, 255, 255));
         jPanel18.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -705,6 +710,10 @@ public class home extends javax.swing.JFrame {
 
         panel_content.add(createn, "card3");
 
+<<<<<<< HEAD
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel15.setText("Notas panel");
+=======
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         jPanel4.setBackground(new java.awt.Color(204, 255, 204));
@@ -854,6 +863,7 @@ public class home extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 48)); // NOI18N
         jLabel9.setText("NOTAS");
+>>>>>>> cce9f8f93d899e27d5dd08f3aed669a408ff1938
 
         javax.swing.GroupLayout notasLayout = new javax.swing.GroupLayout(notas);
         notas.setLayout(notasLayout);
@@ -880,6 +890,10 @@ public class home extends javax.swing.JFrame {
 
         panel_content.add(notas, "card4");
 
+<<<<<<< HEAD
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel16.setText("Calendario Panel");
+=======
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 0, 153));
         jLabel15.setText("CALENDARIO");
@@ -888,6 +902,7 @@ public class home extends javax.swing.JFrame {
         jCalendar1.setDecorationBackgroundColor(new java.awt.Color(102, 255, 255));
         jCalendar1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jCalendar1.setSundayForeground(new java.awt.Color(255, 0, 0));
+>>>>>>> cce9f8f93d899e27d5dd08f3aed669a408ff1938
 
         javax.swing.GroupLayout calendarioLayout = new javax.swing.GroupLayout(calendario);
         calendario.setLayout(calendarioLayout);

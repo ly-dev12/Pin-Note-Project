@@ -386,7 +386,7 @@ public class home extends javax.swing.JFrame {
         panel_content.add(homevar, "card2");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel7.setText("Pene plastico .net 2");
+        jLabel7.setText("creeate panel");
 
         javax.swing.GroupLayout createnLayout = new javax.swing.GroupLayout(createn);
         createn.setLayout(createnLayout);
@@ -408,7 +408,7 @@ public class home extends javax.swing.JFrame {
         panel_content.add(createn, "card3");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel15.setText("How COCK with Luis");
+        jLabel15.setText("Notas panel");
 
         javax.swing.GroupLayout notasLayout = new javax.swing.GroupLayout(notas);
         notas.setLayout(notasLayout);
@@ -430,7 +430,7 @@ public class home extends javax.swing.JFrame {
         panel_content.add(notas, "card4");
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel16.setText("FUCKING IN THE SCHOOL");
+        jLabel16.setText("Calendario Panel");
 
         javax.swing.GroupLayout calendarioLayout = new javax.swing.GroupLayout(calendario);
         calendario.setLayout(calendarioLayout);
